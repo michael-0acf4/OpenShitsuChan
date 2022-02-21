@@ -9,4 +9,4 @@ OpenSource version of Shitsu-chan (https://shitsulab.herokuapp.com)
 5. .. and you are done !
 
 # Ressources
-* [Here is the Math] (https://drive.google.com/file/d/1cUjDhK5TFMKzs-fU_xjSHU6rziD9YvL4/view)
+* [Here is the Math](https://drive.google.com/file/d/1cUjDhK5TFMKzs-fU_xjSHU6rziD9YvL4/view)
