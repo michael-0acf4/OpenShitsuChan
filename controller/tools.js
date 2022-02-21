@@ -6,9 +6,9 @@ const logger = require('../tools/logger').Create(__filename);
 
 router.use (async (req, res, next) => {
     req.session.user = null; // do not destroy the session, just replace the user session
-    req.session.editor = {
-        seed : Tools.randomSeed ()
-    };
+    // req.session.editor = {
+        // seed : Tools.randomSeed ()
+    // };
     next ();
 });
 
