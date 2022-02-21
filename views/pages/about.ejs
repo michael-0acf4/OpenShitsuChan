@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+  		<title>Shitsulab | About</title>
+		<%- include ('../shared/header') -%>
+		<%- include ('../shared/cssimport') -%>
+	</head>
+	<body>
+		<%- include ('../shared/navbar') -%>
+		<div class="basic-container">
+			<img src="/assets/images/face-5.png">
+			<div>
+				<h1> Shitsu </h1>
+				<li>Shitsu is a simple program that will guess (almost) any character you can think of !</li>
+				<div>
+					<li>Think of anyone while answering the questions !</li>
+					<ul>Ex: a character from an anime, a marvel character, ... etc</ul>
+				</div>
+				<p>
+					That being said, you can contribute to Shitsu's knowledge base by playing the game.	
+				</p>
+			</div>
+			<div>
+				<h1>How does it work ?</h1>
+				<li>
+					The main algorithm uses a bayesian model mixed with a bit of information theory.
+				</li>
+				<li>
+					This approach is much more suitable for our problem compared to a typical decision tree.
+				</li>
+				<li>
+					<a href="https://drive.google.com/file/d/1cUjDhK5TFMKzs-fU_xjSHU6rziD9YvL4/view?usp=sharing">More infos</a>
+					on how I implemented it.
+				</li>
+			</div>
+			<div>
+				<h1>Bug Report</h1>
+				<li>
+					You can email me anytime if you encounter a bug or just want to ask questions.
+				</li>
+				<li>
+					afmichael73@gmail.com
+				</li>
+			</div>
+			<div>Github : <a href="https://github.com/afmika">afmika</a> - (c) <%= copyright %></div>
+		</div>
+		<%- include ('../shared/jsimport') -%>
+		<%- include ('../shared/footer') -%>
+	</body>
+</html>

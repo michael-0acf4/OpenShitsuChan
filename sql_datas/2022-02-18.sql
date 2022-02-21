@@ -1,0 +1,1 @@
+ALTER TABLE "Character" ADD COLUMN "submit_time" TIMESTAMP NOT NULL DEFAULT NOW ();

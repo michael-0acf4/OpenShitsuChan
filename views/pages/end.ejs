@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+  		<title>Shitsulab | Result</title>
+		<%- include ('../shared/header') -%>
+		<%- include ('../shared/cssimport') -%>
+	</head>
+	<body>
+		<%- include ('../shared/navbar') -%>
+		<div class="flex-container">
+            <div class="center">
+				<div class="basic-responsive">
+					<table>
+						<tr>
+							<td>
+								<img src="/assets/images/face-<%= result_datas.ai_reaction_index %>.png">
+							</td>
+						</tr>
+						<tr>
+							<th class="txt-at-left">
+								<%= result_datas.chara_in_mind?.name %>
+								<%= (isRandom || result_datas.ai_reaction_index <= 1) ? ' ??' : '' %>
+							</th>
+						</tr>
+						<tr>
+							<td class="txt-at-left">
+								<%= isRandom ? 'You are a bit random' : '' %>
+							</td>
+						</tr>
+						
+						<tr>
+							<td class="txt-at-right">
+								(Submitted by <%= result_datas.chara_in_mind?.submitted_by %>)
+							</td>
+						</tr>
+						<tr>
+							<td class="txt-at-center">
+								<a href="/play?gtrace=<%= result_datas.random_seed %>">
+									<button class="btn-color-primary">New game</button>
+								</a>
+								<a href="/play/game/result/wrong">
+									<button class="btn-color-dark">I got it wrong ?</button>
+								</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+            </div>
+		</div>
+		<%- include ('../shared/jsimport') -%>
+		<%- include ('../shared/footer') -%>
+	</body>
+</html>
+

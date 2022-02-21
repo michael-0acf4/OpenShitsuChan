@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+  		<title>Shitsulab | Wrong</title>
+		<%- include ('../shared/header') -%>
+		<%- include ('../shared/cssimport') -%>
+	</head>
+	<body>
+		<%- include ('../shared/navbar') -%>
+		<div class="flex-container">
+            <div class="center">
+				<div class="basic-responsive">
+					<table>
+						<% if (isEmpty (message)) { %>
+						<tr>
+							<td class="txt-at-center">
+								<img src="/assets/images/face-1.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form class="basic-form" action="/play/game/result/wrong" method="POST">
+									Your name : <input class="basic-input" type="text" size="4" name="your_name" placeholder="Your name">
+									Character Name : <input class="basic-input" type="text" size="4" name="name" placeholder="Character name" required>
+									<button class="btn-color-primary">Submit</button>
+								</form>
+							</td>
+						</tr>
+						<% } %>
+						<% if (message != '') { %>
+								<tr class="txt-at-center">
+									<img src="/assets/images/face-4.png">
+								</td>
+							</tr>
+						<% } %>
+						<tr>
+							<td  class="txt-at-center">
+								<span class="text-color-danger"><%= error %></span>
+								<span class="text-color-primary"><%= message %></span>
+							</td>
+						</tr>
+						<tr>
+							<td class="txt-at-center">
+								<a href="/play">
+									<button class="btn-color-success">Play again !</button>
+								</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+            </div>
+		</div>
+		<%- include ('../shared/jsimport') -%>
+		<%- include ('../shared/footer') -%>
+	</body>
+</html>
+

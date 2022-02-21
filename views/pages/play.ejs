@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+  		<title>Shitsulab | Play</title>
+		<%- include ('../shared/header') -%>
+		<%- include ('../shared/cssimport') -%>
+	</head>
+	<body>
+		<%- include ('../shared/navbar') -%>
+		<div class="flex-container">
+            <div class="center">
+				<div class="basic-responsive">
+					<table>   
+						<tr>
+							<td class="txt-at-center">
+								<%
+									let face = 'face-' + game_data.ai_reaction_index;
+								%>
+								<img src="/assets/images/<%= face %>.png">
+							</td>
+						</tr>
+						<tr>
+							<th class="txt-at-left">
+								<%= game_data.number_q %> -
+								<%= uppFirst(game_data.question.content) %>
+							</th>
+						</tr>
+						<% 
+							let index = 1;
+							let qid = game_data.question.idquestion;
+							for (let key in game_data.responses) { 
+						%>
+						<tr>
+							<td class="txt-at-center">
+								<a href="/play/game/choose/<%= qid %>/<%= index %>">
+									<button class="btn-color-primary"><%= key %></button>
+								</a>
+							</td>
+						</tr>
+						<% 
+								index++;
+							} 
+						%>
+						<% 
+							if (display_stop) { 
+						%>
+						<tr>
+							<td class="txt-at-center">
+								<a href="/play/game/result?w=w">
+									<button class="btn-color-danger">Tell it to me already !</button>
+								</a>
+							</td>
+						</tr>
+						<% 
+							}
+						%>
+					</table>
+				</div>
+            </div>
+		</div>
+		<%- include ('../shared/jsimport') -%>
+		<%- include ('../shared/footer') -%>
+	</body>
+</html>
+

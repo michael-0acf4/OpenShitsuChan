@@ -1,0 +1,50 @@
+{	
+	"PORT" : <MAIN_PORT>,
+	"SERVER_ADDR" : "<YOUR_HOST>",
+	"DATABASE_CONF" : {
+		"user" : "postgres",
+		"database" : "<YOUR_DATABASE>",
+		"host" : "<YOUR_HOST>",
+		"password" : "<YOUR_PASSWORD>",
+		"port" : <DB_PORT>
+	},
+
+	"choices" : {
+		"Yes" : 1,
+		"Probably" : 0.7,
+		"I don't know" : 0.5,
+		"Probably not" : 0.2,
+		"No" : 0.0001
+	},
+
+	"listing" : {
+		"top" : 3,
+		"sort" : true,
+		"min_question_to_do" : 14,
+		"show_stop_after_q" : 30,
+		"high_match_min" : 0.95
+	},
+
+	"constant" : {
+		"correction" : 0.7,
+		"accepting_prob_update" : 0.2,
+		"most_probable_barrier" : 0.2
+	},
+
+	"ERROR_LOG" : "./logs/error.log",
+	"LOG" : "./logs/console.log",
+
+	"backoffice" : {
+		"passwords" : [
+			"<SHA256_HASH_PWD_HEX_DIGEST_FOR_EDITOR>",
+			"<SHA256_HASH_PWD_HEX_DIGEST_FOR_EDITOR>"
+		]
+	},
+
+	"LOG_STATUS" : {
+		"STOP_ALL" : false,
+		"INFO" : true,
+		"WARN" : true,
+		"ERROR" : true
+	}
+}

@@ -1,0 +1,297 @@
+/**
+ * @author afmika
+ *
+ * This project is under the MIT License
+ */
+
+/*
+    All CSS variables of this small framework will be put in there
+*/
+:root {
+    /* Colors stolen from ... (yeah) */
+    --color-primary: #337ab7;
+    --color-success: #5cb85c;
+    --color-danger: #d9534f;
+    --color-border:#f0eeee;
+    --color-infos:#bfc1c4;
+    --color-dark:#3e454b;
+    --color-very-dark:#23292e;
+
+    --standard-padding: 16px;
+    /* Column size */
+    --standard-column-width: 8.33%; /* 100 / 12 cols ~ 8.33 each*/
+    --standard-flex-margin: 12px;
+
+    /* table and global theme */
+    --standard-global-font: Arial, Helvetica, sans-serif;
+    --standard-global-color: #91b3d1;
+
+    --nav-color-active: #2b73c5;
+    --nav-color-home: #283966;
+    --nav-text-color: #fff;
+    --nav-color-hover-active: #fff;
+    --nav-color-bg: var(--standard-global-color);
+    --nav-color-hover: rgb(17, 3, 3);
+}
+/**
+ * @author afmika
+ * This project is under the MIT License
+ */
+
+/*  Hover effect */
+button:hover {
+    opacity: 0.8;
+}
+
+/* All classes with btn-color-*/
+[class*="btn-color-"] {
+    width: auto;
+    padding: 10px 18px;
+    font-weight: bold;
+}
+.btn-color-primary {  background-color: var(--color-primary); }
+.btn-color-success {  background-color: var(--color-success); }
+.btn-color-danger {  background-color: var(--color-danger); }
+.btn-color-dark { background-color: var(--color-dark); }
+.btn-color-very-dark { background-color: var(--color-very-dark); }
+
+/* basic style for all buttons */
+button {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none; /* flat design */
+}
+/* 
+    Large buttons (use 100% the size of its container)
+    Useful for form buttons 
+ */
+.btn-large {
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-tiny {
+    cursor: pointer;
+    padding: 2px 3px;
+    margin: 1px 0;
+}
+
+/**
+ * @author afmika
+ *
+ * This project is under the MIT License
+ */
+
+.global_container {
+    width: 400px;
+}
+
+html, body {
+    font-family: var(--standard-global-font);
+}
+
+.center { margin: auto; }
+.txt-at-center { text-align: center; }
+.txt-at-left { text-align: left; }
+.txt-at-right { text-align: right; }
+
+/* Bordered form */
+.basic-form {
+    border: 5px solid var(--color-border);
+}
+
+/* Full-width inputs */
+.basic-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.small-input {
+    width: 25%;
+}
+
+
+.basic-img-container {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.basic-container {
+    padding: var(--standard-padding);
+}
+
+/* if the screen width is >= 400px */
+@media screen and (max-width: 400px) {
+    .global_container {
+        width: 100%;
+    }
+}
+
+.text-color-primary {  color: var(--color-primary); }
+.text-color-success { color: var(--color-success); }
+.text-color-infos { color: var(--color-infos); }
+.text-color-danger {  color: var(--color-danger); }
+.text-color-dark { color: var(--color-dark); }
+.text-color-very-dark { color: var(--color-very-dark); }
+
+.text-bold { font : bold; }
+
+.little-margin {
+    margin-left: 12px;
+}
+
+.input-squared {
+    width: 12px;
+    height: 32px;
+    font-size: 10px;
+}
+
+/**
+ * @author afmika
+ * This project is under the MIT License
+ */
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container > .flex-it  {
+    width: var(--standard-column-width); /* standard width for a single column */
+    margin: var(--standard-flex-margin); /* margin between each column */
+}
+
+.flex-container > .push-it {
+    margin-left: auto;
+}
+
+/* if the screen width > 600px */
+@media screen and (min-width: 600px) {
+    .flex-container > .flex-it-if-large  {
+        width: var(--standard-column-width); /* standard width for a single column */
+        margin: var(--standard-flex-margin); /* margin between each column */
+    }
+}
+
+/* Useful when displaying 'Offres' */
+.flex-card-container {
+    display: flex;
+    flex-wrap: wrap;
+ }
+.flex-card {
+    border: 2px Solid var(--color-primary);
+    flex: 1 0 300px;
+    box-sizing: border-box;
+    margin: 10px 10px;
+    padding: 10px 4px;
+}
+
+.flex-card-title-1 {
+    font-size: 28px;
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 8px 8px;
+}
+
+.flex-card-title-2 {
+    font-size: 16px;
+    background-color: var(--color-dark);
+    color: #fff;
+    padding: 8px 8px;
+}
+
+.flex-card-content {
+    padding: 8px 8px;
+}
+
+@media screen and (min-width: 400px) {
+    .flex-card {
+       max-width: calc(50% -  1em);
+    }
+}
+@media screen and (min-width: 600px) {
+    .flex-card {
+        max-width: calc(25% - 1em);
+    }
+}
+
+.basic-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+.basic-table td, .basic-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.basic-table tr:nth-child() { background-color: #f2f2f2; }
+.basic-table tr:hover { background-color: #ddd; }
+.basic-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--standard-global-color);
+    color: white;
+}
+.basic-responsive {
+    overflow-x: auto;
+}
+
+/**
+ * @author afmika
+ *
+ * This project is under the MIT License
+ */
+.basic-navbar {
+    background-color: var(--nav-color-bg);
+    overflow: hidden;
+} 
+.basic-navbar a {
+    float: left;
+    display: block;
+    color: var(--nav-text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.basic-navbar a:hover { color: var(--nav-color-hover); }
+
+/* highlight */
+.is-home {
+    background-color: var(--nav-color-home);
+    color: var(--nav-color-hover-active);   
+}
+
+.basic-navbar a.is-active {
+    background-color: var(--nav-color-active);
+    color: var(--nav-color-hover-active);
+}
+.basic-navbar .icon-if-small { display: none; }
+
+ /* Handling responsiveness */
+
+ @media screen and (max-width: 600px) {
+    .basic-navbar a:not(:first-child) { display: none; }
+    .basic-navbar a.icon-if-small {
+        float: right;
+        display: block;
+    }
+}  
+@media screen and (max-width: 600px) {
+    .basic-navbar.responsive { position: relative; }
+    .basic-navbar.responsive a.icon-if-small {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .basic-navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+} 

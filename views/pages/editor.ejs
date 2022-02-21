@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+  		<title>Shitsulab | Editor</title>
+		<%- include ('../shared/header') -%>
+		<%- include ('../shared/cssimport') -%>
+	</head>
+	<body>
+		<%- include ('../shared/navbar') -%>
+		<div class="basic-container">
+			<div>
+				Character <button class="btn-color-danger" id="clearAll">Clear All</button>
+				<input class="basic-input" type="text" id="character_keyword">
+			</div>
+			<div>
+				Question <input class="basic-input" type="text" id="question_keyword">
+			</div>
+			<div>
+				<button class="btn-color-very-dark" id="clear_question">x</button>
+			</div>
+			<div>
+				Probability
+				<div id="slider"></div>
+				<h4 id="slider_value"></h4>
+			</div>
+			<div>
+				<button class="btn-color-success" id="add">Add</button>
+				<button class="btn-color-very-dark" id="submitAll">Submit All</button>
+			</div>
+			<div>
+				<span class="text-color-danger" id="error"><%= error %></span>
+				<span class="text-color-success" id="message"><%= message %></span>
+			</div>
+			<div>
+				<p id="character_name"></p>
+				<table class="basic-table" id="question_list">
+				</table>
+			</div>
+
+		</div>
+		<%- include ('../shared/jsimport') -%>
+		<%- include ('../shared/jsimport-editor.ejs') -%>
+	</body>
+</html>

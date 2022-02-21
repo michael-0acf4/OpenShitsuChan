@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+  		<title>Shitsulab | Tools</title>
+		<%- include ('../shared/header') -%>
+		<%- include ('../shared/cssimport') -%>
+	</head>
+	<body>
+		<%- include ('../shared/navbar') -%>
+		<div class="basic-container">
+			<form class="basic-form " action="/tools/login" method="POST">
+				Passcode <input  type="password" size="8" name="password">
+				<button class="btn-color-danger">Submit</button>
+			</form>
+			<div>
+				<span class="text-color-danger"><%= error %></span>
+			</div>
+		</div>
+		<%- include ('../shared/jsimport') -%>
+	</body>
+</html>

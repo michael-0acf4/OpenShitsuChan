@@ -1,0 +1,564 @@
+Statistics generated --- 20/02/2022 18:56:14
+Total entropy : 69.70107720018714
+Total characters : 20
+Total questions : 139
+Copyright afmika 2022
+-----
+
+Q : is your character a streamer ?
+> Info 3.598002626605261, p(Q) ~ avg(pi) = 0.0825835
+> 17 chr(s) is/are strongly related to this question
+
+Q : does your character play chess ?
+> Info 3.4331790021729254, p(Q) ~ avg(pi) = 0.0925785
+> 17 chr(s) is/are strongly related to this question
+
+Q : can your character read people's minds ?
+> Info 3.2165383166462043, p(Q) ~ avg(pi) = 0.1075785
+> 17 chr(s) is/are strongly related to this question
+
+Q : does your character exist in real life ?
+> Info 2.999134642556746, p(Q) ~ avg(pi) = 0.12507500000000005
+> 15 chr(s) is/are strongly related to this question
+
+Q : does your character play an instrument ?
+> Info 2.771364956958125, p(Q) ~ avg(pi) = 0.14646572950000009
+> 17 chr(s) is/are strongly related to this question
+
+Q : does your character have Chuunibyou Syndrome ?
+> Info 2.736292493525061, p(Q) ~ avg(pi) = 0.15007000000000006
+> 15 chr(s) is/are strongly related to this question
+
+Q : is your character a Tsundere ?
+> Info 2.489455257073018, p(Q) ~ avg(pi) = 0.17807350000000005
+> 17 chr(s) is/are strongly related to this question
+
+Q : is your character a big sister ?
+> Info 2.376593825554992, p(Q) ~ avg(pi) = 0.19256350000000005
+> 14 chr(s) is/are strongly related to this question
+
+Q : is your character blonde ?
+> Info 2.3214592951749005, p(Q) ~ avg(pi) = 0.2000650000000001
+> 14 chr(s) is/are strongly related to this question
+
+Q : is your character a sadist ?
+> Info 2.2306683286946836, p(Q) ~ avg(pi) = 0.2130600000000001
+> 14 chr(s) is/are strongly related to this question
+
+Q : is your character an introvert ?
+> Info 2.228976493896009, p(Q) ~ avg(pi) = 0.21331000000000006
+> 17 chr(s) is/are strongly related to this question
+
+Q : is your character from a romance show ?
+> Info 2.0317396375498418, p(Q) ~ avg(pi) = 0.24455999999999997
+> 16 chr(s) is/are strongly related to this question
+
+Q : is your character related to Marvel ?
+> Info 1.9997114898418766, p(Q) ~ avg(pi) = 0.25005
+> 12 chr(s) is/are strongly related to this question
+
+Q : is your character an idol ?
+> Info 1.9996537947331572, p(Q) ~ avg(pi) = 0.25006
+> 14 chr(s) is/are strongly related to this question
+
+Q : is your character from a comedy show ?
+> Info 1.9184035220616342, p(Q) ~ avg(pi) = 0.26454709449999997
+> 17 chr(s) is/are strongly related to this question
+
+Q : does your character play piano ?
+> Info 1.7931392630062422, p(Q) ~ avg(pi) = 0.2885435
+> 10 chr(s) is/are strongly related to this question
+
+Q : does your character have long hair ?
+> Info 1.728024602870612, p(Q) ~ avg(pi) = 0.30186499999999994
+> 19 chr(s) is/are strongly related to this question
+
+Q : is your character short ?
+> Info 1.7181650622661107, p(Q) ~ avg(pi) = 0.303935044855
+> 19 chr(s) is/are strongly related to this question
+
+Q : does your character come from an all girl school ?
+> Info 1.6212442490111154, p(Q) ~ avg(pi) = 0.32505499999999987
+> 15 chr(s) is/are strongly related to this question
+
+Q : is your character from Academy City ?
+> Info 1.618229948163678, p(Q) ~ avg(pi) = 0.32573486499999993
+> 17 chr(s) is/are strongly related to this question
+
+Q : is your character from a manga ?
+> Info 1.5775301583787398, p(Q) ~ avg(pi) = 0.33505499999999994
+> 16 chr(s) is/are strongly related to this question
+
+Q : is your character more than 1m70 tall ?
+> Info 1.5477567165249748, p(Q) ~ avg(pi) = 0.3420415
+> 17 chr(s) is/are strongly related to this question
+
+Q : is your character a cyborg ?
+> Info 1.5144495185542184, p(Q) ~ avg(pi) = 0.35002999999999995
+> 6 chr(s) is/are strongly related to this question
+
+Q : is your character into BL ?
+> Info 1.5144495185542184, p(Q) ~ avg(pi) = 0.35002999999999995
+> 6 chr(s) is/are strongly related to this question
+
+Q : does your character play shogi ?
+> Info 1.5144495185542184, p(Q) ~ avg(pi) = 0.35002999999999995
+> 6 chr(s) is/are strongly related to this question
+
+Q : is your character black ?
+> Info 1.5144495185542184, p(Q) ~ avg(pi) = 0.35002999999999995
+> 6 chr(s) is/are strongly related to this question
+
+Q : does your character know how to sing ?
+> Info 1.4717147481591435, p(Q) ~ avg(pi) = 0.36055349999999986
+> 17 chr(s) is/are strongly related to this question
+
+Q : is your character related to Disney ?
+> Info 1.4149605575950899, p(Q) ~ avg(pi) = 0.37501999999999996
+> 5 chr(s) is/are strongly related to this question
+
+Q : is your character's eyes unusual ?
+> Info 1.4149413228152978, p(Q) ~ avg(pi) = 0.37502499999999994
+> 6 chr(s) is/are strongly related to this question
+
+Q : does your character always wear a T-Shirt ?
+> Info 1.4149413228152978, p(Q) ~ avg(pi) = 0.37502499999999994
+> 6 chr(s) is/are strongly related to this question
+
+Q : is your character's hair color pink ?
+> Info 1.4149413228152978, p(Q) ~ avg(pi) = 0.37502499999999994
+> 5 chr(s) is/are strongly related to this question
+
+Q : does your character stream on Twitch ?
+> Info 1.4149413228152978, p(Q) ~ avg(pi) = 0.37502499999999994
+> 5 chr(s) is/are strongly related to this question
+
+Q : is your character from Youtube ?
+> Info 1.4149413228152978, p(Q) ~ avg(pi) = 0.37502499999999994
+> 5 chr(s) is/are strongly related to this question
+
+Q : is your character a magician ?
+> Info 1.4149413228152978, p(Q) ~ avg(pi) = 0.37502499999999994
+> 5 chr(s) is/are strongly related to this question
+
+Q : is your character's hair color orange ?
+> Info 1.4149413228152978, p(Q) ~ avg(pi) = 0.37502499999999994
+> 5 chr(s) is/are strongly related to this question
+
+Q : is your character's hair color white ?
+> Info 1.4149413228152978, p(Q) ~ avg(pi) = 0.37502499999999994
+> 5 chr(s) is/are strongly related to this question
+
+Q : is your character created artificially ?
+> Info 1.4149413228152978, p(Q) ~ avg(pi) = 0.37502499999999994
+> 5 chr(s) is/are strongly related to this question
+
+Q : is your character's haircut unusual ?
+> Info 1.4149413228152978, p(Q) ~ avg(pi) = 0.37502499999999994
+> 5 chr(s) is/are strongly related to this question
+
+Q : does your character play violin ?
+> Info 1.4149413228152978, p(Q) ~ avg(pi) = 0.37502499999999994
+> 6 chr(s) is/are strongly related to this question
+
+Q : is your character the main antagonist of the series they're in ?
+> Info 1.4149413228152978, p(Q) ~ avg(pi) = 0.37502499999999994
+> 5 chr(s) is/are strongly related to this question
+
+Q : is your character a big brother ?
+> Info 1.3769759706251372, p(Q) ~ avg(pi) = 0.38502499999999995
+> 6 chr(s) is/are strongly related to this question
+
+Q : is your character a god ?
+> Info 1.3769759706251372, p(Q) ~ avg(pi) = 0.38502499999999995
+> 7 chr(s) is/are strongly related to this question
+
+Q : is your character from a video game ?
+> Info 1.35093275424163, p(Q) ~ avg(pi) = 0.39203850000000007
+> 15 chr(s) is/are strongly related to this question
+
+Q : is your character shy ?
+> Info 1.3491674428467169, p(Q) ~ avg(pi) = 0.3925185
+> 6 chr(s) is/are strongly related to this question
+
+Q : is your character born after 2000 ?
+> Info 1.3400023955967004, p(Q) ~ avg(pi) = 0.39502
+> 6 chr(s) is/are strongly related to this question
+
+Q : can your character fly ?
+> Info 1.3218379292649534, p(Q) ~ avg(pi) = 0.40002499999999996
+> 6 chr(s) is/are strongly related to this question
+
+Q : does your character always wear blue ?
+> Info 1.3218379292649534, p(Q) ~ avg(pi) = 0.40002499999999996
+> 6 chr(s) is/are strongly related to this question
+
+Q : is your character noisy ?
+> Info 1.2514872430931399, p(Q) ~ avg(pi) = 0.42001499999999997
+> 6 chr(s) is/are strongly related to this question
+
+Q : is your character a vocaloid ?
+> Info 1.2344143358870643, p(Q) ~ avg(pi) = 0.425015
+> 3 chr(s) is/are strongly related to this question
+
+Q : is your character a cat ?
+> Info 1.2344143358870643, p(Q) ~ avg(pi) = 0.425015
+> 3 chr(s) is/are strongly related to this question
+
+Q : is your character skinny ?
+> Info 1.2344143358870643, p(Q) ~ avg(pi) = 0.425015
+> 3 chr(s) is/are strongly related to this question
+
+Q : is your character a pervert ?
+> Info 1.2344143358870643, p(Q) ~ avg(pi) = 0.425015
+> 3 chr(s) is/are strongly related to this question
+
+Q : is your character an animal ?
+> Info 1.2344143358870643, p(Q) ~ avg(pi) = 0.425015
+> 3 chr(s) is/are strongly related to this question
+
+Q : does your character wear glasses ?
+> Info 1.2343803917187675, p(Q) ~ avg(pi) = 0.42502499999999993
+> 8 chr(s) is/are strongly related to this question
+
+Q : is your character from an anime ?
+> Info 1.2343634199341078, p(Q) ~ avg(pi) = 0.4250299999999999
+> 9 chr(s) is/are strongly related to this question
+
+Q : does your character always wear black ?
+> Info 1.2008629466788447, p(Q) ~ avg(pi) = 0.43501499999999993
+> 4 chr(s) is/are strongly related to this question
+
+Q : is your character a "super" human ?
+> Info 1.1908539508186409, p(Q) ~ avg(pi) = 0.43804350000000003
+> 17 chr(s) is/are strongly related to this question
+
+Q : does your character have super powers ?
+> Info 1.1737660973341821, p(Q) ~ avg(pi) = 0.4432627095
+> 20 chr(s) is/are strongly related to this question
+
+Q : is your character a monster ?
+> Info 1.1519710339114684, p(Q) ~ avg(pi) = 0.45000999999999997
+> 2 chr(s) is/are strongly related to this question
+
+Q : is your character a slime ?
+> Info 1.1519710339114684, p(Q) ~ avg(pi) = 0.45000999999999997
+> 2 chr(s) is/are strongly related to this question
+
+Q : is your character a maid ?
+> Info 1.1519710339114684, p(Q) ~ avg(pi) = 0.45000999999999997
+> 2 chr(s) is/are strongly related to this question
+
+Q : is your character from Monogatari Series ?
+> Info 1.1519710339114684, p(Q) ~ avg(pi) = 0.45000999999999997
+> 2 chr(s) is/are strongly related to this question
+
+Q : does your character wear a suit ?
+> Info 1.1519710339114684, p(Q) ~ avg(pi) = 0.45000999999999997
+> 2 chr(s) is/are strongly related to this question
+
+Q : is your character from Fate Series ?
+> Info 1.1519710339114684, p(Q) ~ avg(pi) = 0.45000999999999997
+> 2 chr(s) is/are strongly related to this question
+
+Q : is your character related to a mythological creature ?
+> Info 1.1519710339114684, p(Q) ~ avg(pi) = 0.45000999999999997
+> 2 chr(s) is/are strongly related to this question
+
+Q : is your character a vampire ?
+> Info 1.1519710339114684, p(Q) ~ avg(pi) = 0.45000999999999997
+> 2 chr(s) is/are strongly related to this question
+
+Q : does your character wear an armor ?
+> Info 1.1519710339114684, p(Q) ~ avg(pi) = 0.45000999999999997
+> 2 chr(s) is/are strongly related to this question
+
+Q : does your character have brown hair ?
+> Info 1.1519710339114684, p(Q) ~ avg(pi) = 0.45000999999999997
+> 3 chr(s) is/are strongly related to this question
+
+Q : is your character from a AAA game ?
+> Info 1.1519710339114684, p(Q) ~ avg(pi) = 0.45000999999999997
+> 3 chr(s) is/are strongly related to this question
+
+Q : is your character an orphan ?
+> Info 1.1519550044118332, p(Q) ~ avg(pi) = 0.45001499999999994
+> 4 chr(s) is/are strongly related to this question
+
+Q : can your character run fast ?
+> Info 1.1519389750902969, p(Q) ~ avg(pi) = 0.45002
+> 6 chr(s) is/are strongly related to this question
+
+Q : is your character sometimes act like an idiot ?
+> Info 1.1360139889850156, p(Q) ~ avg(pi) = 0.45501499999999995
+> 6 chr(s) is/are strongly related to this question
+
+Q : is your character good at computers ?
+> Info 1.1280885543003762, p(Q) ~ avg(pi) = 0.4575215
+> 10 chr(s) is/are strongly related to this question
+
+Q : does your character have tattoos ?
+> Info 1.1202785523351009, p(Q) ~ avg(pi) = 0.46000499999999994
+> 2 chr(s) is/are strongly related to this question
+
+Q : does your character like to tease ?
+> Info 1.1202628711229372, p(Q) ~ avg(pi) = 0.4600099999999999
+> 3 chr(s) is/are strongly related to this question
+
+Q : is your character popular on social media ?
+> Info 1.1202628711229372, p(Q) ~ avg(pi) = 0.4600099999999999
+> 6 chr(s) is/are strongly related to this question
+
+Q : does your character come from a band?
+> Info 1.1202628711229372, p(Q) ~ avg(pi) = 0.4600099999999999
+> 3 chr(s) is/are strongly related to this question
+
+Q : is your character's hair color black ?
+> Info 1.0795237540258305, p(Q) ~ avg(pi) = 0.47318499999999997
+> 15 chr(s) is/are strongly related to this question
+
+Q : is your character a butler ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character's hair color yellow ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : does your character have brown eyes ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character a robot ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : does your character have a sword ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character related to rocks ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character a magical creature ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character a model ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character some sort of detective ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character's hair color red ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : does your character have red eyes ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 2 chr(s) is/are strongly related to this question
+
+Q : does your character like to play video games ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character an humanoid ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character mute ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : can your character become invisible ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character related to demons ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character still alive ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character an epser ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character a hacker ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character a cyclope ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character related to angels ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : does your character have unusual ears ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : does your character always look depressed ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : does your character have piercings ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character related to an Isekai anime ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character an elf ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character from another world ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : does your character wear a hat ?
+> Info 1.0739853952601157, p(Q) ~ avg(pi) = 0.475005
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character some sort of leader ?
+> Info 1.0439433475875972, p(Q) ~ avg(pi) = 0.485
+> 1 chr(s) is/are strongly related to this question
+
+Q : does your character have scars ?
+> Info 1.0439433475875972, p(Q) ~ avg(pi) = 0.485
+> 2 chr(s) is/are strongly related to this question
+
+Q : is your character from space ?
+> Info 1.0439433475875972, p(Q) ~ avg(pi) = 0.485
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character rich ?
+> Info 1.0439433475875972, p(Q) ~ avg(pi) = 0.485
+> 1 chr(s) is/are strongly related to this question
+
+Q : does your character time travel ?
+> Info 1.0438987288433201, p(Q) ~ avg(pi) = 0.4850149999999999
+> 7 chr(s) is/are strongly related to this question
+
+Q : does your character have a lot of friends ?
+> Info 1.0159327755158083, p(Q) ~ avg(pi) = 0.4945084999999999
+> 8 chr(s) is/are strongly related to this question
+
+Q : is your character big ?
+> Info 1.0144995696951153, p(Q) ~ avg(pi) = 0.49499999999999994
+> 3 chr(s) is/are strongly related to this question
+
+Q : is your character from the army ?
+> Info 1, p(Q) ~ avg(pi) = 0.5
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character from a poor family ?
+> Info 1, p(Q) ~ avg(pi) = 0.5
+> 1 chr(s) is/are strongly related to this question
+
+Q : does your character have blue eyes ?
+> Info 1, p(Q) ~ avg(pi) = 0.5
+> 2 chr(s) is/are strongly related to this question
+
+Q : is your character a martial artist ?
+> Info 1, p(Q) ~ avg(pi) = 0.5
+> 1 chr(s) is/are strongly related to this question
+
+Q : does your character like girls ?
+> Info 0.9714308478032292, p(Q) ~ avg(pi) = 0.51
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character good at sports ?
+> Info 0.9434164716336324, p(Q) ~ avg(pi) = 0.52
+> 3 chr(s) is/are strongly related to this question
+
+Q : is your character related to water ?
+> Info 0.9309853220848195, p(Q) ~ avg(pi) = 0.5245
+> 1 chr(s) is/are strongly related to this question
+
+Q : does your character like cats ?
+> Info 0.9301053952228594, p(Q) ~ avg(pi) = 0.52482
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character related to Tsunagaru Connect ?
+> Info 0.929610672108602, p(Q) ~ avg(pi) = 0.525
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character in a CG movie ?
+> Info 0.929610672108602, p(Q) ~ avg(pi) = 0.525
+> 1 chr(s) is/are strongly related to this question
+
+Q : does your character wear an uniform ?
+> Info 0.929610672108602, p(Q) ~ avg(pi) = 0.525
+> 1 chr(s) is/are strongly related to this question
+
+Q : does your character live with a double identity ?
+> Info 0.929610672108602, p(Q) ~ avg(pi) = 0.525
+> 1 chr(s) is/are strongly related to this question
+
+Q : is your character super strong ?
+> Info 0.9295969322212598, p(Q) ~ avg(pi) = 0.5250049999999999
+> 6 chr(s) is/are strongly related to this question
+
+Q : is your character good at electronics ?
+> Info 0.9097291837630362, p(Q) ~ avg(pi) = 0.5322849999999999
+> 7 chr(s) is/are strongly related to this question
+
+Q : is your character popular in the series they are in ?
+> Info 0.8756718649977985, p(Q) ~ avg(pi) = 0.5449999999999999
+> 3 chr(s) is/are strongly related to this question
+
+Q : is your character super smart ?
+> Info 0.8728391206458486, p(Q) ~ avg(pi) = 0.54607116355
+> 19 chr(s) is/are strongly related to this question
+
+Q : is your character a female ?
+> Info 0.8627633995237942, p(Q) ~ avg(pi) = 0.5498982499999998
+> 20 chr(s) is/are strongly related to this question
+
+Q : does your character always wear a mask ?
+> Info 0.8624702456695988, p(Q) ~ avg(pi) = 0.55001
+> 6 chr(s) is/are strongly related to this question
+
+Q : is your character from an american comic ?
+> Info 0.8624702456695988, p(Q) ~ avg(pi) = 0.55001
+> 6 chr(s) is/are strongly related to this question
+
+Q : is your character a main protagonist ?
+> Info 0.8122508753665526, p(Q) ~ avg(pi) = 0.5694926489000001
+> 19 chr(s) is/are strongly related to this question
+
+Q : is your character related to DC Comics ?
+> Info 0.7995960900493082, p(Q) ~ avg(pi) = 0.57451
+> 7 chr(s) is/are strongly related to this question
+
+Q : is your character funny ?
+> Info 0.768186568845724, p(Q) ~ avg(pi) = 0.5871550499999998
+> 17 chr(s) is/are strongly related to this question
+
+Q : is your character related to a Movie ?
+> Info 0.7381442764770788, p(Q) ~ avg(pi) = 0.59951
+> 8 chr(s) is/are strongly related to this question
+
+Q : is your character a male ?
+> Info 0.7381322442422139, p(Q) ~ avg(pi) = 0.599515
+> 10 chr(s) is/are strongly related to this question
+
+Q : is your character a student ?
+> Info 0.6841051578167457, p(Q) ~ avg(pi) = 0.6223917499999999
+> 19 chr(s) is/are strongly related to this question
+
+Q : is your character asian ?
+> Info 0.6784701439034045, p(Q) ~ avg(pi) = 0.6248275
+> 17 chr(s) is/are strongly related to this question
+
+
