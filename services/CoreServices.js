@@ -1,4 +1,5 @@
 const config = require("../tools/project.config.json");
+const DBModel = require("../model/DBModel");
 const logger = require('../tools/logger').Create(__filename);
 
 
@@ -64,6 +65,7 @@ module.exports = class CoreServices {
                 id : id, 
                 name : statCharaOf[id].infos.name,
                 probability : probability,
+                play_count : statCharaOf[id].infos.play_count,
                 submitted_by : statCharaOf[id].infos.submitted_by
             });
         }
@@ -79,13 +81,16 @@ module.exports = class CoreServices {
      * @returns {JSON} {idchara : {q1 : , q2 : ...., ...}}
      */
     static async getCharacterSetAsMap (connexion) {
-        const sql = 'SELECT "idcharacter", "name", "idquestion", "probability", "submitted_by" FROM "v_CharaAnswer"';
+        const sql = `SELECT 
+                        "idcharacter", "name", "idquestion", 
+                        "probability", "submitted_by", "play_count"
+                    FROM "v_CharaAnswer"`;
         const result = await connexion.query (sql);
         let map = {};
         for (let item of result.rows) {
             if (map[item.idcharacter] == undefined) {
                 map[item.idcharacter] = {
-                    infos : {name : item.name, submitted_by : item.submitted_by},
+                    infos : {name : item.name, submitted_by : item.submitted_by, play_count : item.play_count},
                     quest : {}
                 };
             }
@@ -117,4 +122,14 @@ module.exports = class CoreServices {
         return result.rows[0] || null;
     }
 
+    static async incrementPlayCount (connexion, idcharacter) {
+        const db = DBModel.use (connexion);
+        const curr = await db.getById ('"Character"', idcharacter);
+        logger.info ('increment play_count' + idcharacter);
+        if (curr) {
+            await db.updateById ('"Character"', {
+                play_count : parseInt(curr.play_count) + 1
+            }, idcharacter);
+        }
+    }
 };

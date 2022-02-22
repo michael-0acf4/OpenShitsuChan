@@ -38,11 +38,17 @@ router.get ('/', async (req, res) => {
 		}
 	}
 
+	const count_signature = Tools.randomSeed ();
+
 	req.session.user = {
 		answers : {},
 		chara_in_mind : null,
 		ai_reaction_index : 0, // by default we show the clueless pic
-		random_seed : Tools.randomSeed () // unique to a specific user
+		random_seed : Tools.randomSeed (), // unique to a specific user
+		count_signature : { // prevents double counting (when the refresh button is clicked)
+			first : count_signature,
+			second : count_signature // value to compare to the first value (changed after a count update)
+		}
 	};
 	res.redirect ('/play/game');
 });
@@ -134,13 +140,24 @@ router.get ('/game/choose/:qid/:choice_index', async (req, res) => {
 
 
 router.get ('/game/result', async (req, res) => {
+	let con = null;
 	try {
+		con = Connection ();
 		let result_datas = req.session.user;
 		let {rnd} = req.query;
 		let isRandom = !Tools.isEmpty (rnd);
 		if (isRandom)
 			result_datas.ai_reaction_index = 1;
-	
+		
+		const {count_signature} = req.session.user;
+		if (count_signature.first == count_signature.second) {
+			await CoreServices.incrementPlayCount (con, result_datas.chara_in_mind.id);
+			count_signature.second = ''; // prevents the next refresh to be recounted
+			logger.info ('Counting -- signature --' + count_signature.first);
+		} else {
+			logger.warn ('Not Counting -- signature mismatch --');
+		}
+
 		// req.session.user = null; // maybe ?
 		res.render('pages/end', {
 			uppFirst : Tools.uppFirst,
@@ -152,6 +169,8 @@ router.get ('/game/result', async (req, res) => {
 	} catch (err) {
 		logger.error (err.toString ());
 		res.redirect ('/error/500');
+	} finally {
+		if (con != null) con.end ();
 	}
 });
 

@@ -7,9 +7,13 @@ const QuestServices = require('../services/QuestServices');
 
 
 	const con = Connection ();
+	// await CoreServices.incrementPlayCount (con, 'CHR_3');
+	// await CoreServices.incrementPlayCount (con, 'CHR_4');
+	// await CoreServices.incrementPlayCount (con, 'CHR_5');
+	// await CoreServices.incrementPlayCount (con, 'CHR_5');
 	// const exclude_all = [1, 2, 3, 4, 5, 6, 7, 8].map(x => 'QST_' + x);
-	const qst = await QuestServices.getSingleQuestion (con, ['QST_8', 'QST_1']);
-	console.log(qst);
+	// const qst = await QuestServices.getSingleQuestion (con, ['QST_8', 'QST_1']);
+	// console.log(qst);
 
 	// const res = await CoreServices.getCharacterSetAsMap (con);
 	// const pmap = [1, 0.7, 0.5, 0.3, 0];
