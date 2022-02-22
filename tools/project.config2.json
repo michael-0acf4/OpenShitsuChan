@@ -28,9 +28,7 @@
 	"constant" : {
 		"correction" : 0.7,
 		"accepting_prob_update" : 0.2,
-		"most_probable_barrier" : 0.2,
-		"random_window_max_asking_question" : 3,
-		"top_question_split" : 4
+		"most_probable_barrier" : 0.2
 	},
 
 	"ERROR_LOG" : "./logs/error.log",

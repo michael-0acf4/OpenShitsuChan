@@ -144,40 +144,36 @@ module.exports = class BackServices {
      */
     static async performEntropyStatistics (connexion) {
         const db = DBModel.use (connexion);
-        const characters = (await db.get ('"Character"')).rows;
-
+        const total_chara = parseInt(
+            (await db.query ('SELECT COUNT(*) "cnt" FROM "Character"')).rows[0]['cnt']
+        );
+        const p_each_quest = (await db.get ('"v_CountPossibilityNoZero"')).rows;
         let questions = {};
-        for (let character of characters) {
-            const p_each_quest = (await db.query ({
-                text : 'SELECT * FROM "getAllProbaByIdChara" ($1)',
-                values : [character.idcharacter]
-            })).rows;
-            for (let quest of p_each_quest) {
-                if (questions[quest.idquestion] == undefined)
-                    questions[quest.idquestion] = {proba : 0, count : 0, infos : 0, content : '', sharedWith : 0};
-                questions[quest.idquestion].proba += parseFloat(quest.probability);
-                questions[quest.idquestion].count++; // should be equal to the size of all characters
-                questions[quest.idquestion].sharedWith += quest.idanswer ? 1 : 0;
-                questions[quest.idquestion].content = quest.content; // should be equal to the size of all characters
-            }
+        let total_possibilities = 0;
+        for (let quest of p_each_quest) {
+            if (questions[quest.idquestion] == undefined)
+                questions[quest.idquestion] = {proba : 0, infos : 0, content : '', sharedWith : 0};
+            const possibility = parseFloat(quest.possibility);
+            questions[quest.idquestion].proba = possibility; // will be rescaled later
+            questions[quest.idquestion].sharedWith = possibility;
+            questions[quest.idquestion].content = quest.content;
+            total_possibilities += possibility;
         }
-    
         let list = [];
         let total_entropy = 0;
         for (let id in questions) {
-            questions[id].proba /= questions[id].count; // average proba
+            questions[id].proba /= total_possibilities;
             let p = questions[id].proba;
             questions[id].infos = -Math.log2(p);
             total_entropy += p * questions[id].infos;
-            list.push ({ id : id,... questions[id]});
+            list.push ({ id : id, ... questions[id]});
         }
     
         list = list.sort ((a, b) => b.infos - a.infos);
-
         return {
             list : list,
             total_entropy : total_entropy,
-            total_charas : characters.length
+            total_charas : total_chara
         };
     }
 
@@ -192,14 +188,14 @@ module.exports = class BackServices {
         str += 'Statistics generated --- ' + date + '\n';
         str += 'Total entropy (uncertainity) : ' + total_entropy + '\n';
         str += 'Total characters so far : ' + total_charas + '\n';
-        str += 'Total questions so far : ' + list_q.length + '\n';
+        str += 'Total questions related to at least 1 character : ' + list_q.length + '\n';
         str += 'Copyright afmika ' + new Date().getFullYear () + '\n';
         str += '-----' + '\n';
         str += '\n';
     
         for (let q of list_q) {
             str += 'Q : ' +  q.content + '\n';
-            str += '> Info ' + q.infos + ', p(Q) ~ avg(pi) = ' + q.proba + '\n';
+            str += '> Info ' + q.infos + ', p(Q) = ' + q.proba + '\n';
             str += '> ' + q.sharedWith + ' chr(s) is/are strongly related to this question\n';
             str += '\n';
         }

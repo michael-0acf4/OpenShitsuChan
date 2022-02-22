@@ -141,4 +141,12 @@ module.exports = class Tools {
 		return str.replace (/\s\s+|[\n\t\r]/g, ' ')
 				.trim();
 	}
+
+	static pickTopRandomly (sorted_arr, top) {
+		if (top < 0)
+			throw Error ('<top> is negative');
+		let n = Math.min (top, sorted_arr.length);
+		let idx = Math.floor (Math.random () * n);
+		return sorted_arr [ idx ];
+	}
 }
