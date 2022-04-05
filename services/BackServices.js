@@ -82,7 +82,7 @@ module.exports = class BackServices {
         if (!cid) {
             const seq = await db.nextval ('"characterSeq"');
             cid = 'CHR_' + seq;
-            // it exist
+            // it exists
             await db.insert('"Character"', {
                 idcharacter : cid,
                 name : cname,
@@ -93,7 +93,7 @@ module.exports = class BackServices {
             character.id = cid;
             logger.warn ('Insert character ' + cid);
         }
-        // use id question if null insert question, get then get the id
+        // use id question, if null insert question then get the id
 
         for (let question of questions) {
             // == 'null' : just in case
@@ -133,7 +133,7 @@ module.exports = class BackServices {
             });
             logger.warn ('Inserting answer for ' + idquestion);
         } else {
-            // just update it !
+            // update it !
             await db.updateById ('"Answer"', {probability : probability}, answer.idanswer);
             logger.warn ('Updating answer ' + answer.idanswer + ' new proba => ' + probability);
         }
