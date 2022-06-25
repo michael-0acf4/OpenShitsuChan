@@ -17,7 +17,7 @@ module.exports = class AnsServices {
 
         if (match_chara == null) {
             const seq = await db.nextval ('"characterSeq"');
-            // it exist
+            // it exists
             match_chara = {
                 idcharacter : 'CHR_' + seq,
                 name : chara_name, // should be != 'X'
@@ -94,7 +94,7 @@ module.exports = class AnsServices {
     }
 
     /**
-     * When the user is doing stupid stuff
+     * When the user is doing stupid things
      * @param {*} answers_so_far 
      */
     static isDoingRandomStuff (answers_so_far) {

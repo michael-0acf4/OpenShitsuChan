@@ -1,5 +1,4 @@
 const config = require("../tools/project.config.json");
-const CoreServices = require("./CoreServices");
 const DBModel = require("../model/DBModel");
 const logger = require('../tools/logger').Create(__filename);
 const crypto = require ('crypto');
@@ -58,7 +57,7 @@ module.exports = class BackServices {
      */
     static async insertOrUpdateCharaFromPost (connexion, character, questions) {
         if (!questions || questions.length == 0)
-            throw Error ('questions field is not defined or is an empty array');
+            throw Error ('\'questions\' field is not defined or is an empty array');
         let cid = Tools.perfectTrimAndClean (character.id);
         cid = (cid == 'null' || Tools.isEmpty(cid)) ? null : cid;
         let cname = Tools.perfectTrimAndClean (character.value);
