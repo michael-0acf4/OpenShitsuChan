@@ -1,5 +1,5 @@
 # OpenShitsuChan
-OpenSource version of Shitsu-chan (https://shitsulab.herokuapp.com)
+OpenSource version of Shitsu-chan 
 
 # How to start
 1. Create a database
