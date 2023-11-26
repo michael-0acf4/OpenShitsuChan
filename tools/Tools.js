@@ -25,10 +25,10 @@ module.exports = class Tools {
     return input == undefined || input == null || input == "";
   }
 
-  static randomSeed () {
-		let a = Math.random (), b = Math.random ();
-		return (a + '' + b).replace (/\./g, '');
-	}
+  static randomSeed() {
+    let a = Math.random(), b = Math.random();
+    return (a + "" + b).replace(/\./g, "");
+  }
 
   static pickTopRandomly(sorted_arr, top) {
     if (top < 0) {
