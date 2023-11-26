@@ -71,7 +71,7 @@ module.exports = class CoreServices {
         }
         if (sort)
             result = result.sort ((x, y) => y.probability - x.probability);
-        if (parseInt(top) == NaN && top > 0)
+        if (!isNaN(parseInt(top)) && top > 0)
             result = result.filter ((_, i) => i < top);
         return result;
     }
