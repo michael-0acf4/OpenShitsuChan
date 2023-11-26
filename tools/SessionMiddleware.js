@@ -27,7 +27,7 @@ module.exports = (req, res, next) => {
         return;
     }
 
-    // we are definitely running into a protected url
+    // running into a protected url
     // console.log(req.session.user);
 	if (!req.session.user) {
         res.redirect ('/home?msg=go-home');
