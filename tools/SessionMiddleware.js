@@ -1,37 +1,37 @@
 module.exports = (req, res, next) => {
-    // console.log(req.url);
-	
-    const exceptions = [
-        '/home',
-        '/about',
-        '/bug',
-        '/assets',
-        '/error',
-        '/play',
-        '/tools',
-        '/api',
-        '/statistics',
-    ];
+  // console.log(req.url);
 
-    let isException = false;
-    exceptions.forEach (value => {
-        const expr = new RegExp(value, 'gi');
-        if (expr.test(req.url)) {
-            isException = true;
-            return;
-        }
-    });
+  const exceptions = [
+    "/home",
+    "/about",
+    "/bug",
+    "/assets",
+    "/error",
+    "/play",
+    "/tools",
+    "/api",
+    "/statistics",
+  ];
 
-    if (isException) {
-        next ();
-        return;
+  let isException = false;
+  exceptions.forEach((value) => {
+    const expr = new RegExp(value, "gi");
+    if (expr.test(req.url)) {
+      isException = true;
+      return;
     }
+  });
 
-    // running into a protected url
-    // console.log(req.session.user);
-	if (!req.session.user) {
-        res.redirect ('/home?msg=go-home');
-    } else {
-        next ();
-    }
+  if (isException) {
+    next();
+    return;
+  }
+
+  // running into a protected url
+  // console.log(req.session.user);
+  if (!req.session.user) {
+    res.redirect("/home?msg=go-home");
+  } else {
+    next();
+  }
 };
