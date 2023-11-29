@@ -1,5 +1,4 @@
 const Connection = require("../services/Connection");
-const DBModel = require("../model/DBModel");
 const BackServices = require("../services/BackServices");
 
 (async () => {

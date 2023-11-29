@@ -9,6 +9,7 @@ let bodyParser = require("body-parser");
 
 // [!] : May be useful. idk
 const config = require("./tools/project.config.json"); // config file
+const path = require("path");
 const logger = require("./tools/logger").Create(__filename); // custom debugger
 
 // [!] : favicon
@@ -47,6 +48,7 @@ app.use((req, res, next) => {
 
 // [!] set the view engine to ejs
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 // [!] ip logs
 // inside middleware handler

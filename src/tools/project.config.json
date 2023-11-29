@@ -1,12 +1,12 @@
 {
-  "PORT": <MAIN_PORT>,
-  "SERVER_ADDR": "<YOUR_HOST>",
+  "PORT": 1234,
+  "SERVER_ADDR": "localhost",
   "DATABASE_CONF": {
     "user": "postgres",
-    "database": "<YOUR_DATABASE>",
-    "host": "<YOUR_HOST>",
-    "password": "<YOUR_PASSWORD>",
-    "port": <DB_PORT>
+    "database": "afshitsu",
+    "host": "localhost",
+    "password": "root",
+    "port": 5432
   },
 
   "choices": {
