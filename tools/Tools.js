@@ -1,13 +1,5 @@
 module.exports = class Tools {
   /**
-   * @params {number} n
-   * @returns {string}
-   */
-  static addZero(n) {
-    return n < 10 ? `0${n}` : n;
-  }
-
-  /**
    * @params {Date} date
    * @params {number} days
    * @returns {Date}
@@ -26,7 +18,7 @@ module.exports = class Tools {
   }
 
   static randomSeed() {
-    let a = Math.random(), b = Math.random();
+    const a = Math.random(), b = Math.random();
     return (a + "" + b).replace(/\./g, "");
   }
 
@@ -34,8 +26,15 @@ module.exports = class Tools {
     if (top < 0) {
       throw Error("<top> is negative");
     }
-    let n = Math.min(top, sorted_arr.length);
-    let idx = Math.floor(Math.random() * n);
+    const n = Math.min(top, sorted_arr.length);
+    const idx = Math.floor(Math.random() * n);
     return sorted_arr[idx];
+  }
+
+  /**
+   * @param {string} str 
+   */
+  static uppFirst(str) {
+    return str.charAt(0).toLocaleUpperCase() + str.slice(1);
   }
 };
