@@ -23,6 +23,7 @@ P(H) = \dfrac{1}{T} \space \space \space (1)
 \newline
 P(\neg{H}) = \dfrac{1}{T} \space \space \space (2)
 $$
+
 Second thing we would like to know is how do we calculate the probability that a hypothesis H is
 true given the available evidences?
 
@@ -103,10 +104,10 @@ $$
 P(H|E_1 \land E_2 \land .. \land E_N ) = 
 \dfrac
     {
-        \dfrac{1}{T}\prod_{k}^{} {[1 - d(A_k, Q_{k}^{(H)})]}
+        \dfrac{1}{T}\prod_{k} {[1 - d(A_k, Q_{k}^{(H)})]}
     }
     {
-        \dfrac{1}{T}\prod_{k}^{} {[1 - d(A_k, Q_{k}^{(H)})]}
+        \dfrac{1}{T}\prod_{k} {[1 - d(A_k, Q_{k}^{(H)})]}
         +
         \biggl(1 - \dfrac{1}{T}\biggl)\prod_{k}^{} {[1 - D^{(\neg{H})} (k) )]}
     } 
