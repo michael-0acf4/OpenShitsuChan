@@ -65,8 +65,8 @@ For a more general case in which we provide more than a single evidence we have,
 $$
 P(H|E_1 \land E_2 \land .. \land E_N ) = 
 \dfrac
-    {P(H) \prod_{k}^{} {P(E_k|H)}}
-    {P(H) \prod_{k}^{} {P(E_k|H)} + P(\neg{H}) \prod_{k}^{} {P(E_k|\neg{H})}} 
+    {P(H) \prod_{k} {P(E_k|H)}}
+    {P(H) \prod_{k} {P(E_k|H)} + P(\neg{H}) \prod_{k} {P(E_k|\neg{H})}} 
 \space \space \space (6)
 $$
 
@@ -111,7 +111,7 @@ P(H|E_1 \land E_2 \land .. \land E_N ) =
     {
         \dfrac{1}{T}\prod_{k} {[1 - d(A_k, Q_{k}^{(H)})]}
         +
-        \biggl(1 - \dfrac{1}{T}\biggl)\prod_{k}^{} {[1 - D^{(\neg{H})} (k) )]}
+        \biggl(1 - \dfrac{1}{T}\biggl)\prod_{k} {[1 - D^{(\neg{H})} (k) )]}
     } 
 \space \space \space (9)
 $$
@@ -132,8 +132,8 @@ For our "AI" to look more "AI-ish", we have to solve this optimization problem:
 First of all, how are we going to quantify information?
 We have Information Theory for backing us up!
 
-$$ probability = 1 / 2^{n\_bits\_of\_information}$$
-$$ p = \dfrac{1}{2^{I}}$$
+$$ probability = 1 / 2^{BitsOfInformation} $$
+$$ p = \dfrac{1}{2^{I}} $$
 
 For example if $p = \dfrac{1}{2}$ then it is worth **1 bit** of information (I = 1): 50% one thing and 50% something else which is analoguous to the fact that a random bit has 50% chance to be either 0 or 1.
 
@@ -144,9 +144,9 @@ population has red hair. If we were to ask the fewest possible questions on how 
 then asking if the person in question has red hair will bring us much more information because **if so**
 then congratulations! We have just reduced our search space to 2% of the population.
 
-$$70 \% = \dfrac{1}{2^{(I=0.51)}}$$
+$$0.7 = \dfrac{1}{2^{(I=0.51)}}$$
 
-$$2 \% = \dfrac{1}{2^{(I=5.64)}}$$
+$$0.2 = \dfrac{1}{2^{(I=5.64)}}$$
 
 In the second case, we have reduced our search space to almost 1/50 of the initial size of the
 population.
@@ -185,7 +185,7 @@ This quantity computes a proportion hence it is the perfect candidate.
 First, let’s only consider the questions that correspond to at least **1** character.
 
 $$
-SetQ_{≥1} =\{Q \in SetQ | Poss(Q) \ne \empty \}
+SetQ_{≥1} =\{Q \in SetQ | Poss(Q) \ne \emptyset \}
 $$
 
 $$
