@@ -20,7 +20,9 @@ First thing we know is that, initially, each character have an equal chance of b
 
 $$
 P(H) = \dfrac{1}{T} \space \space \space (1)
-\newline
+$$
+
+$$
 P(\neg{H}) = \dfrac{1}{T} \space \space \space (2)
 $$
 
