@@ -23,7 +23,7 @@ P(H) = \dfrac{1}{T} \space \space \space (1)
 $$
 
 $$
-P(\neg{H}) = \dfrac{1}{T} \space \space \space (2)
+P(\neg{H}) = 1 - \dfrac{1}{T} \space \space \space (2)
 $$
 
 Second thing we would like to know is how do we calculate the probability that a hypothesis H is
