@@ -45,8 +45,9 @@ P(X) + P(\neg{X}) = 1
 $$
 
 By applying the Bayes’ theorem on $(4)$ and using $(3)$
+
 $$
-\dfrac{P(X)P(Y|X)}{P(Y)} + \dfrac{P(\neg{X})P(Y|\neg{X})}{P(Y)} = 1 
+\dfrac{P(X)P(Y|X)}{P(Y)} + \dfrac{P(\neg{X})P(Y|\neg{X})}{P(Y)} = 1
 $$
 
 We can then write the Bayes’ theorem in a much more compact way by replacing the denominator:
@@ -82,10 +83,12 @@ $$
 
 ## Computing $P(E_k|\neg{H})$
 Same thing as above but the main difference is that we have to take into account all other possibilities.
+
 $$
 P(E_k
 |¬H) = 1 − avgDist(OurAnsGivenNot\_{H}[k], UserAns[k])
 $$
+
 $$
 P(E_k
 |¬H) = 1 − \dfrac{1}{Card(C\setminus H)}
@@ -95,6 +98,7 @@ $$
 
 ## Finally..
 From $(1)$, $(2)$, $(6)$, $(7)$ and $(8)$ we have,
+
 $$
 P(H|E_1 \land E_2 \land .. \land E_N ) = 
 \dfrac
@@ -114,11 +118,7 @@ Read as "Probability of the hypothesis H given the evidences $E = E_1, E_2, .., 
 - $(E_i)_{(1 \leqslant i \leqslant  N)}$: obvervable evidence, defined implicitly by the user′s response
 - $Q_{k}^{(H)}$: correct answer given H, a real number between 0 and 1.
 - $d(x, y) := |x -y|$ (normalized distance for all $x, y \in [0; 1]$)
-- $
-D^{(\neg{H})} (k) = 
-\dfrac{1}{Card(C\setminus H)}
-\sum_{X \in {C \setminus H}}{d(A_k, Q_{k}^{(X)})}
-$
+- $D^{(\neg{H})} (k) = \dfrac{1}{Card(C \setminus H)} \sum_{X \in {C \setminus H}}{d(A_k, Q_{k}^{(X)})}$
 - $C$ : set of all characters
 
 # Finding the next optimal question
@@ -141,9 +141,9 @@ population has red hair. If we were to ask the fewest possible questions on how 
 then asking if the person in question has red hair will bring us much more information because **if so**
 then congratulations! We have just reduced our search space to 2% of the population.
 
-$$70\% = \dfrac{1}{2^{(I=0.51)}}$$
+$$70 \% = \dfrac{1}{2^{(I=0.51)}}$$
 
-$$2\% = \dfrac{1}{2^{(I=5.64)}}$$
+$$2 \% = \dfrac{1}{2^{(I=5.64)}}$$
 
 In the second case, we have reduced our search space to almost 1/50 of the initial size of the
 population.
@@ -151,7 +151,7 @@ population.
 Let $I(Q)$ be the information worth of the question $Q$ in our database.
 
 $$
-P(Q) =  \dfrac{1}{2^{I(Q)}} \rarr I(Q) = -log_2 P(Q)
+P(Q) =  \dfrac{1}{2^{I(Q)}} → I(Q) = -log_2 P(Q)
 $$
 
 $P(Q)$ is a quantity that tells us how likely a character in our knowledge base corresponds.
@@ -166,17 +166,21 @@ Which can be read as “Any character $X$ with a probability greater than $0.5$ 
 
 In order to approximate $P(Q)$ we need to be a little bit more cautious.
 We are looking for is a quantity that embeds P(Q) and also verifies:
+
 $$ \sum_{Q \in SetQ} {P(Q)} = 1 $$
 
 In our model, we shall use:
+
 $$
 P(Q) := \dfrac
     {Card(Poss(Q))}
     {\sum_{X\in SetQ}Card(Poss(X))}
 $$
+
 This quantity computes a proportion hence it is the perfect candidate.
 
 First, let’s only consider the questions that correspond to at least **1** character.
+
 $$
 SetQ_{≥1} =\{Q \in SetQ | Poss(Q) \ne \empty \}
 $$
