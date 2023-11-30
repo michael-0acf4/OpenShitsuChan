@@ -146,7 +146,7 @@ then congratulations! We have just reduced our search space to 2% of the populat
 
 $$0.7 = \dfrac{1}{2^{(I=0.51)}}$$
 
-$$0.2 = \dfrac{1}{2^{(I=5.64)}}$$
+$$0.02 = \dfrac{1}{2^{(I=5.64)}}$$
 
 In the second case, we have reduced our search space to almost 1/50 of the initial size of the
 population.
