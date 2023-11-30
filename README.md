@@ -162,7 +162,7 @@ Let’s try to approximate this value with the few things we have at hand.
 Let $Poss(Q)$ be the set that contains all characters corresponding to $P(Q)$.
 
 $$
-Poss(Q) = \{X \in C \space | \space prob(Q^{(X)}) > 1/2 \} (Q \in SetQ)
+Poss(Q) = \\{X \in C \space | \space prob(Q^{(X)}) > 1/2 \\} (Q \in SetQ)
 $$
 
 Which can be read as “Any character $X$ with a probability greater than $0.5$ associated with question $Q$ (a Yes)”
@@ -185,7 +185,7 @@ This quantity computes a proportion hence it is the perfect candidate.
 First, let’s only consider the questions that correspond to at least **1** character.
 
 $$
-SetQ_{≥1} =\{Q \in SetQ | Poss(Q) \ne \emptyset \}
+SetQ_{≥1} =\\{Q \in SetQ | Poss(Q) \ne \emptyset \\}
 $$
 
 $$
