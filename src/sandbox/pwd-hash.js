@@ -7,6 +7,11 @@ const crypto = require("crypto");
  */
 const [, , password] = process.argv;
 
+if (!password) {
+  console.error("Password not provided");
+  return;
+}
+
 const hash = crypto
   .createHash("sha256")
   .update(password)
