@@ -136,7 +136,7 @@ We have Information Theory for backing us up!
 $$ probability = 1 / 2^{BitsOfInformation} $$
 $$ p = \dfrac{1}{2^{I}} $$
 
-For example if $p = \dfrac{1}{2}$ then it is worth **1 bit** of information (I = 1): 50% one thing and 50% something else which is analoguous to the fact that a random bit has 50% chance to be either 0 or 1.
+For example if $p = \dfrac{1}{2}$ then it is worth **1 bit** of information (I = 1): 50% one thing and 50% something else which is analogous to the fact that a random bit has 50% chance to be either 0 or 1.
 
 The lower the probability the bigger the information value.
 
