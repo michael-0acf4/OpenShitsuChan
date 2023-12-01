@@ -32,19 +32,19 @@ module.exports = class Tools {
   }
 
   /**
-   * @param {string} str 
+   * @param {string} str
    */
   static uppFirst(str) {
     return str.charAt(0).toLocaleUpperCase() + str.slice(1);
   }
 
   /**
-   * @param {string} str 
+   * @param {string} str
    */
   static perfectTrimAndClean(str) {
-		if (!str) return str;
-		return str
-      .replace (/\s+/g, ' ')
-			.trim();
+    if (!str) return str;
+    return str
+      .replace(/\s+/g, " ")
+      .trim();
   }
 };
