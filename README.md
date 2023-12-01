@@ -33,6 +33,7 @@ A simple way to implement this idea mathematically is to use the Bayes’ theore
 In the general case, if H and E are two dependent events then,
 
 $$ P(H \land E) = P(H)P(E|H) = P(E)P(H|E) $$
+
 $$
 P(H|E) = \dfrac{P(H)P(E|H)}{P(E)} 
 \space \space \space (3)
@@ -75,7 +76,7 @@ $P(X ∧ Y|Z) = P(X|Z)P(Y|Z)$
 
 # Modeling
 ## Computing $P(E_k|H)$
-Since we need to implement the idea that when the user’s response matches ours then $P(E_k|H) = 1 - \epsilon, (\epsilon > 0) $, we can model this by defining a normalized distance function $d(x, y)$.
+Since we need to implement the idea that when the user’s response matches ours then $P(E_k|H) = 1 - \epsilon (\epsilon \geq 0) $, we can model this by defining a normalized distance function $d(x, y)$.
 
 $$P(E_k|H) = 1 - d(UserAns[k], OurAns[k])$$
 $$
