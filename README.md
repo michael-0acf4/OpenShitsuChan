@@ -48,10 +48,10 @@ P(X) + P(\neg{X}) = 1
 \space \space \space (4)
 $$
 
-By applying the Bayes’ theorem on $(4)$ and using $(3)$
+Which is further generalized with the law of total probability
 
 $$
-\dfrac{P(X)P(Y|X)}{P(Y)} + \dfrac{P(\neg{X})P(Y|\neg{X})}{P(Y)} = 1
+P(X)P(Y|X) + P(\neg{X})P(Y|\neg{X}) = P(Y)
 $$
 
 We can then write the Bayes’ theorem in a much more compact way by replacing the denominator:
